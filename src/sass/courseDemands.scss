@@ -1,0 +1,56 @@
+.slider__list--demands{
+    
+    position: relative;
+    width: 480px;
+    height: 296px;
+}
+.courseDemands{
+    margin-bottom: 160px;
+   &__wrapper{
+    @extend %flex-between;
+    position: relative;
+    padding-right: 20px;
+   } 
+   &__button{
+       &--next{
+        top:80px;
+        right: -22px; 
+       }
+       &--preview{
+          left: 305px;
+          top:80px;
+       }
+   }
+   &__title{
+       @extend %h2;
+       margin-bottom: 45px;
+   }
+}
+.slider__items--demands{
+    @extend %flex-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     opacity: 0;
+     box-shadow: -3px 6px 10px 4px rgba(0,0,0,.11);
+     
+}
+ .showing{
+    z-index: 2;
+    opacity: 1;
+    transition: all 1s linear;
+}
+.slider__text--demands{
+    width: 402px;
+    padding-left: 50px;
+    &::before{
+        background: url(../img/demandsBefore.png);
+        width: 16px;
+        height: 48px;
+        left: 23px;
+        top: 5px;
+    }
+}

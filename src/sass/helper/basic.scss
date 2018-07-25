@@ -1,0 +1,32 @@
+body{
+    padding: 0;
+    margin: 0;
+    font: 400 17px 'Acrom' sans-serif;
+    color: $primaryBlack;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0;
+    line-height: 1.5;
+}
+
+.wrapper{
+    @include wrapper();
+}

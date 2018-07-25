@@ -1,0 +1,12 @@
+@mixin wrapper($width:850px, $margin: 0 auto){
+    max-width: $width;
+    margin: $margin;
+}
+
+@mixin icons-before($baseclass, $list, $path, $ext){
+    @each $icon in $list {
+        .#{$baseclass}#{$icon}::before{
+            background: url(#{$path}#{$icon}.#{$ext}) #{'no-repeat'}; 
+        }
+    }
+}

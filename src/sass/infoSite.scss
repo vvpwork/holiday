@@ -1,0 +1,33 @@
+.infoSite{
+    @extend %flex-between;
+    align-items: flex-start;
+    &__wrapper{
+        width: 50%;
+        padding-top: 20px;
+    }
+    &__title{
+        margin: 0;
+        font-size: 37px;
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        position: relative;
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: -20px;
+            width: 16px;
+            height: 16px;
+            background:$primaryBlack;
+
+        }
+    }
+    &__image{
+        margin-right: 13px;
+    }
+    &__text{
+        margin-bottom: 15px;
+    }
+    
+}

@@ -1,0 +1,49 @@
+.courseProgramm{
+    &__title{
+        font: 800 55px 'Acrom' sans-serif;
+        line-height: 1.2;
+         margin-bottom: 30px;
+        width: 608px;
+        color: $primaryWhite;
+        background: $primaryBlack;
+    }
+    &__list{
+        @extend %flex-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+    }
+    &__items{
+        width: 195px;
+        position: relative;
+        padding-left: 50px;
+        font-size: 11px;
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 62px;
+            height: 27px;
+            left: -34px;
+            top: 13px;
+            
+        }
+        p{
+            margin-bottom: 25px;
+        }
+       
+        &--title{
+            font:800 12px 'Acrom' sans-serif;
+            text-transform: uppercase;
+        }
+    }
+    &__span{
+        display: inline-block;
+        width: 120px;
+        line-height: 1.8;
+        text-align: center;
+        color:$primaryWhite;
+        background: #F5681D;
+    }
+}
+@include icons-before("courseProgramm__items--", $icon, '../img/before/', 'png');

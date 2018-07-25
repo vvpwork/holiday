@@ -1,0 +1,34 @@
+.afterCourse{
+   margin-bottom: 80px;
+    @extend %flex-between;
+     &__wrapper{
+            width: 50%;
+        }
+    
+    &__text{
+        position: relative;
+     
+        box-sizing: border-box;
+        padding-left: 70px;
+        &::before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 56px;
+            height: 8px;
+            top:5px;
+            left: 0;
+            background: $primaryBlack;
+        }
+    }
+    &__title{
+        @extend %h2;
+        margin-bottom: 30px;
+        &--span{
+            color: #fff;
+            background: $primaryBlack;
+        }
+       
+    }
+}
+

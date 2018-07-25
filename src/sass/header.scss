@@ -1,0 +1,42 @@
+.site__header{
+    @extend %flex-between;  
+    padding-top: 30px;
+    margin-bottom: 95px;
+    
+}
+
+.telephone__wrapper{
+    @extend %flex-between;
+}
+.site__mail{
+    margin-right: 30px;
+    position: relative;
+    font-size: 11px;
+    color: $primaryBlack;
+    text-decoration: none;
+    &::before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 15px;
+        height: 11px;
+        background: url(../img/email_icon.png) no-repeat center;
+        top: 3px;
+        left: -17px;
+    }
+}
+.telephone__link{
+    text-decoration: none;
+    color: $primaryBlack;
+    position: relative;
+    &::before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 8px;
+        height: 11px;
+        background: url(../img/telephone_icon.png) no-repeat center;
+        top: 1px;
+        left: -17px;
+    }
+}
